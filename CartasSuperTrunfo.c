@@ -6,7 +6,7 @@
 int main(){
     float pib;
     char state;
-    char cardCode[3];
+    char cardCode[4]; // É necessário declara com 4 espaços para incluri o terminador nulo da string
     char cityName[20];
     int cityPopulation;
     float cityArea;
@@ -34,8 +34,8 @@ int main(){
     printf("\t- Código da Carta: %s\n", cardCode);
     printf("\t- Nome da Cidade: %s\n", cityName);
     printf("\t- População: %d \n", cityPopulation);
-    printf("\t- Área: %f km\n²", cityArea);
-    printf("\t- PIB: %f\n", pib);
+    printf("\t- Área: %.2f km\n²", cityArea);
+    printf("\t- PIB: %.2f bilhões de reais\n", pib);
     printf("\t- Número de Pontos Turísticos: %d\n", turisticSpots);
     printf("\n----------------------------------------\n");
 
